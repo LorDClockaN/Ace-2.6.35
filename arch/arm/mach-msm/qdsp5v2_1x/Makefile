@@ -9,6 +9,7 @@ obj-y += audpreproc.o audio_pcm_in.o
 obj-y += adsp.o adsp_driver.o adsp_info.o
 obj-y += audio_acdb.o audio_aac.o audio_amrnb_in.o audio_evrc_in.o audio_qcelp_in.o
 obj-y += audio_mvs.o
+obj-m += qc_pcm_in.o
 
 #obj-$(CONFIG_MARIMBA_CODEC) += snddev_data_marimba.o
 #obj-$(CONFIG_TIMPANI_CODEC) += snddev_data_timpani.o
