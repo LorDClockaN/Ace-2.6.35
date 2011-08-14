@@ -8,7 +8,7 @@ TOOLCHAIN_PREFIX=arm-eabi-
 
 #make -j4 ARCH=arm CROSS_COMPILE=$CCOMPILER EXTRA_AFLAGS='-mfpu=vfpv3 -ftree-vectorize -floop-interchange -floop-strip-mine -floop-block';
 
-make -j8 ARCH=arm CROSS_COMPILE=$CCOMPILER EXTRA_AFLAGS='-mfpu=neon -ftree-vectorize -mfloat-abi=softfp -floop-interchange -floop-strip-mine -floop-block';
+make -j8 ARCH=arm CROSS_COMPILE=$CCOMPILER EXTRA_AFLAGS='-mfpu=vfpv3 -ftree-vectorize -floop-interchange -floop-strip-mine -floop-block';
 
 
 cp arch/arm/boot/zImage ../finished/;
