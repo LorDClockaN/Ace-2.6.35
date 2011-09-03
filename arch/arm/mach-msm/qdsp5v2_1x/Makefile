@@ -9,4 +9,3 @@ obj-y += audpreproc.o audio_pcm_in.o
 obj-y += adsp.o adsp_driver.o adsp_info.o
 obj-y += audio_acdb.o
 obj-y += audio_mvs.o
-#obj-m += qc_pcm_in.o
