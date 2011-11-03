@@ -123,7 +123,7 @@ static int register_notifier_cable_status(struct notifier_block *nb) { return 0;
 static int unregister_notifier_cable_status(struct notifier_block *nb) { return 0; }
 #endif
 
-#if defined(CONFIG_BATTERY_DS2784)
+#ifdef CONFIG_BATTERY_DS2784
 extern int battery_charging_ctrl(enum batt_ctl_t ctl);
 #endif
 extern int get_cable_status(void);
@@ -135,17 +135,17 @@ extern int batt_notifier_call_chain(unsigned long val, void *v);
 #else
 static int batt_register_client(struct notifier_block *nb)
 {
-	return 0;
+return 0;
 }
 
 static int batt_unregister_client(struct notifier_block *nb)
 {
-	return 0;
+return 0;
 }
 
 static int batt_notifier_call_chain(unsigned long val, void *v)
 {
-	return 0;
+return 0;
 }
 #endif
 
@@ -153,3 +153,4 @@ extern unsigned int batt_get_status(enum power_supply_property psp);
 extern int htc_battery_charger_disable(void);
 
 #endif
+
