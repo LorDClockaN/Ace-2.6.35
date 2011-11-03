@@ -1,0 +1,11 @@
+--- arch/arm/configs/ace_defconfig
++++ arch/arm/configs/ace_defconfig
+@@ -289,7 +289,7 @@
+ # CONFIG_MACH_SPEEDY is not set
+ # CONFIG_MACH_MECHA is not set
+ CONFIG_MACH_GLACIER=y
+-CONFIG_GLACIER_OVERLAY_FORCE_UPDATE=y
++CONFIG_OVERLAY_FORCE_UPDATE=y
+ CONFIG_MACH_SPADE=y
+ # CONFIG_MACH_DYNASTY is not set
+ # CONFIG_MACH_FLYER is not set
